@@ -17,7 +17,9 @@ pip install .
 
 ## Example code
 
-This is an example snippet to slice up your image into a list of images stored in the list `multi_matrix`. The position of each of the small images is stored in `codex`. Keep track of the `codex` as it will be required to rebuild your original image.
+This is an example snippet to slice up your 3D image into a list of images stored in the list `multi_matrix`. The position of each of the small images is stored in `codex`. Keep track of the `codex` as it will be required to rebuild your original image.
+
+For the moment, the code **only works on 3D images**. But you can cut the up in all three dimensions or only in the xy plane by modifying the `cut_in_z_direction` variable.
 
 ```
 from saucisson import cutter
