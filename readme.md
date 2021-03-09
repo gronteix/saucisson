@@ -29,4 +29,4 @@ multi_matrix, codex = cutter.image_cutter(
 
 ```
 
-![Here is an example reconstruction result of a sample image](https://github.com/gronteix/saucisson/images/example_saucisson.png)
+![Here is an example reconstruction result of a sample image](https://github.com/gronteix/saucisson/blob/main/images/example_saucisson.png)
