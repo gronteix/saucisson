@@ -27,7 +27,7 @@ multi_image_list, codex = cutter.image_cutter(
     max_image_size = 100,
     cut_in_z_direction = True)
 
-reconstructed_image = image_recompose(
+reconstructed_image = cutter.image_recompose(
     multi_image_list,
     example_image,
     max_image_size = 100,
@@ -41,7 +41,7 @@ reconstructed_image = image_recompose(
 You can also rebuild other matrixes or images of the same size using the same function. Here is the example code for rebuilding an image from the list of images `other_multi_image_list`
 
 ```
-reconstructed_other_image = image_recompose(
+reconstructed_other_image = cutter.image_recompose(
     other_multi_image_list,
     example_image,
     max_image_size = 100,
