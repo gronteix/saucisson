@@ -33,7 +33,7 @@ def image_cutter(
                     multi_matrix.append(original_image[n_z*max_image_size:(n_z+1)*max_image_size, n_x*max_image_size:(n_x+1)*max_image_size, n_y*max_image_size:(n_y+1)*max_image_size])
                     codex.append((n_z, n_x, n_y))
     
-    return np.array(multi_matrix), codex
+    return multi_matrix, codex
 
 def image_recompose(
     multi_segmented_matrix,
