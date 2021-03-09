@@ -22,11 +22,30 @@ This is an example snippet to slice up your image into a list of images stored i
 ```
 from saucisson import cutter
 
-multi_matrix, codex = cutter.image_cutter(
+multi_image_list, codex = cutter.image_cutter(
     example_image,
     max_image_size = 100,
+    cut_in_z_direction = True)
+
+reconstructed_image = image_recompose(
+    multi_image_list,
+    example_image,
+    max_image_size = 100,
+    codex = codex,
     cut_in_z_direction = True)
 
 ```
 
 ![Here is an example reconstruction result of a sample image](https://github.com/gronteix/saucisson/blob/main/images/example_saucisson.png)
+
+You can also rebuild other matrixes or images of the same size using the same function. Here is the example code for rebuilding an image from the list of images `other_multi_image_list`
+
+```
+reconstructed_other_image = image_recompose(
+    other_multi_image_list,
+    example_image,
+    max_image_size = 100,
+    codex = codex,
+    cut_in_z_direction = True)
+
+```
