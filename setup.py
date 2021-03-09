@@ -10,7 +10,8 @@ setup(
     author_email="gronteix@pasteur.fr",
     url="https://github.com/gronteix/saucisson",
     install_requires=[
-        "numpy"
+        "numpy",
+        "math"
     ],
     packages = ['saucisson']
 )
