@@ -60,5 +60,4 @@ def image_recompose(
 
             reconstructed_image[n_z*max_image_size:(n_z+1)*max_image_size, n_x*max_image_size:(n_x+1)*max_image_size, n_y*max_image_size:(n_y+1)*max_image_size] = plane
 
-        
     return reconstructed_image
